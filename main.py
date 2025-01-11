@@ -11,6 +11,8 @@ from langgraph.checkpoint.memory import MemorySaver
 def load_agent():
     """Logic for loading the agent you want to use should go here."""
     llm = init_chat_model("gpt-4o-mini", model_provider="openai", temperature=0)
+    # You can declare tools here
+    # https://python.langchain.com/docs/how_to/custom_tools/
     tools = []
     prompt = "Always respond like a pirate."
     checkpointer = MemorySaver()
