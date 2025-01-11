@@ -9,6 +9,14 @@ This repo contains an `main.py` file which has a template for a chatbot implemen
 To add your chain, you need to change the `load_chain` function in `main.py`.
 Depending on the type of your chain, you may also need to change the inputs/outputs that occur later on.
 
+## Run locally
+
+After installing dependencies with e.g. `$ pip install -r requirements.txt`, you can run this project locally with the following command:
+
+```sh
+$ streamlit run main.py
+```
+
 ## Deploy on Streamlit
 
 This is easily deployable on the Streamlit platform.
